@@ -2,6 +2,11 @@
 #define SAPERWINDOW_H
 
 #include <QMainWindow>
+#include "settings.h"
+#include "bestresultsdialog.h"
+#include "gameboardmodel.h"
+#include "fielddelegate.h"
+#include <QHeaderView>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class SaperWindow; }
@@ -15,7 +20,14 @@ public:
     SaperWindow(QWidget *parent = nullptr);
     ~SaperWindow();
 
+private slots:
+    void setEasy();
+    void setMedium();
+    void setHard();
+    void showBestResults();
+
 private:
     Ui::SaperWindow *ui;
+    gameBoardModel* model;
 };
 #endif // SAPERWINDOW_H

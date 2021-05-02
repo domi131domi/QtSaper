@@ -9,13 +9,23 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    bestresultmodel.cpp \
+    bestresultsdialog.cpp \
+    fielddelegate.cpp \
+    gameboardmodel.cpp \
     main.cpp \
     saperwindow.cpp
 
 HEADERS += \
-    saperwindow.h
+    bestresultmodel.h \
+    bestresultsdialog.h \
+    fielddelegate.h \
+    gameboardmodel.h \
+    saperwindow.h \
+    settings.h
 
 FORMS += \
+    bestresultsdialog.ui \
     saperwindow.ui
 
 # Default rules for deployment.
