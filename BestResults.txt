@@ -1,14 +1,3 @@
-siema 123
-elo 255
-siema 1
-elo 113
-siema 11
-elo 123
-siema 111
-elo 124123
-siema 1123
-elo 12222
-siema 111
-elo 123123
-siema 222
-elo 2
+domi131domi 200
+domi 235
+XD 300

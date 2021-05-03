@@ -14,7 +14,8 @@ SOURCES += \
     fielddelegate.cpp \
     gameboardmodel.cpp \
     main.cpp \
-    saperwindow.cpp
+    saperwindow.cpp \
+    savedialog.cpp
 
 HEADERS += \
     bestresultmodel.h \
@@ -22,11 +23,13 @@ HEADERS += \
     fielddelegate.h \
     gameboardmodel.h \
     saperwindow.h \
+    savedialog.h \
     settings.h
 
 FORMS += \
     bestresultsdialog.ui \
-    saperwindow.ui
+    saperwindow.ui \
+    savedialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

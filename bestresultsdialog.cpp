@@ -3,7 +3,7 @@
 
 bool BestResultsDialog::compare(Result res1, Result res2)
 {
-    return res1.time < res2.time;
+    return res1.time > res2.time;
 }
 
 BestResultsDialog::BestResultsDialog(QWidget *parent) :

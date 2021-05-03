@@ -7,6 +7,8 @@
 #include "gameboardmodel.h"
 #include "fielddelegate.h"
 #include <QHeaderView>
+#include <QTableView>
+#include "savedialog.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class SaperWindow; }
@@ -19,15 +21,19 @@ class SaperWindow : public QMainWindow
 public:
     SaperWindow(QWidget *parent = nullptr);
     ~SaperWindow();
-
 private slots:
     void setEasy();
     void setMedium();
     void setHard();
     void showBestResults();
+    void gameWon();
+    void newGame();
+    void gameOver();
+    void saveResult();
 
 private:
     Ui::SaperWindow *ui;
     gameBoardModel* model;
+    bool canBeSaved;
 };
 #endif // SAPERWINDOW_H
